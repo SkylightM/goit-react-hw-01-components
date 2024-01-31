@@ -1,0 +1,35 @@
+.transaction-history {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid grey;
+    text-align: center;
+    vertical-align: middle;
+        thead {
+            padding: 30px;
+            border: 1px grey solid;
+            
+            tr{
+                background: lightblue;
+                
+                th {
+                    border: 1px grey solid;
+                    width: 300px;
+                    padding: 8px;
+                }
+            }
+        }
+        tbody {
+            
+            tr {
+                
+                td {
+                    border: 1px grey solid;
+                    padding: 8px;
+                    
+                }
+            }
+            tr:nth-child(even) {
+                background-color: #eee;
+            }
+        }
+}
