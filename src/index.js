@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Profile from 'components/Profile';
+import Profile from 'components/Profile/Profile';
 import './index.css';
 import user from 'user.json';
-import Statistics from 'components/Statistics';
+import Statistics from 'components/Statistics/Statistics';
 import data from 'data.json';
-import FriendList from 'components/FriendList';
+import FriendList from 'components/Friend/FriendList';
 import friends from 'friends.json';
-import TransactionHistory from 'components/TransactionHistory';
+import TransactionHistory from 'components/Transactions/TransactionHistory';
 import transactions from 'transactions.json';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       avatar={user.avatar}
       stats={user.stats}
     />
-    <Statistics title="Upload stats" stats={data} />
+    <Statistics stats={data} />
     <FriendList friends={friends} />
     <TransactionHistory items={transactions} />;
   </React.StrictMode>
