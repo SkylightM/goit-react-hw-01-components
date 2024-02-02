@@ -1,13 +1,6 @@
 import css from './friendsStyles.module.css';
 
 const FriendListItem = ({ id, avatar, name, isOnline }) => {
-    const isActive = () => {
-      if (isOnline==true) {
-        return 'green';
-      } else {
-        return 'red';
-      }
-    };
     return (
       <li className={css.item} key={id}>
         <span
